@@ -1,0 +1,59 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ssm.reco2.MainActivity" >
+
+    <item 
+        android:id="@+id/cam1"
+        android:title="cam1"/>
+    
+    <item 
+        android:id="@+id/cam2"
+        android:title="cam2"/>
+    
+    
+    <item 
+        android:id="@+id/cam3"
+        android:title="cam3"/>
+    <item 
+        android:id="@+id/cam4"
+        android:title="cam4"/>
+    
+    <item 
+        android:id="@+id/cam5"
+        android:title="cam5"/>
+
+    <item 
+        android:id="@+id/cam6"
+        android:title="cam6"/>
+    <item 
+        android:id="@+id/cam7"
+        android:title="cam7"/>
+    
+    <item 
+        android:id="@+id/cam8"
+        android:title="cam8"/>
+    
+    
+    <item 
+        android:id="@+id/cam9"
+        android:title="cam9"/>
+    
+    <item
+        android:id="@+id/bin"
+        android:title="binary"/>
+    
+    <item 
+        android:id="@+id/bp"
+        android:title="BP"/>
+    
+    <item 
+        android:id="@+id/ext"
+        android:title="extract"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

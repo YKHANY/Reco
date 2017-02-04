@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#cc2D2D32"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.recoapp.activity.MainActivity" >
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	    android:background="#ffffff"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+        <LinearLayout 
+		    android:background="#ffffff"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:weightSum="12.92">
+	    	
+            <TextView
+				android:id="@+id/galleryListText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.02"
+                android:text="You took these picture a year ago"
+                android:textSize="13dp"
+                android:textColor="#58585b"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"/>
+            
+            <HorizontalScrollView
+                android:id="@+id/galleryList"
+		        android:background="#D5D5D5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.95" />
+            
+            <RelativeLayout 
+			    android:background="#ffffff"
+	   			android:layout_width="match_parent"
+	    		android:layout_height="0dp"
+	    		android:layout_weight="1.02"
+	    		android:paddingLeft="15dp">
+	    		
+                <ImageView
+                    android:id="@+id/galleryImage"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/photo_select_01"/>
+                
+                <TextView
+                    android:id="@+id/galleryImageText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/galleryImage"
+                    android:layout_marginLeft="7dp"
+	                android:text="Gallery"
+	                android:textSize="13dp"
+	                android:textColor="#58585b"
+	                android:gravity="center_vertical"/>
+                
+            </RelativeLayout>
+            
+            <ScrollView
+		        android:id="@+id/galleryImageScroll"
+		        android:background="#D5D5D5"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="8.95"/>
+            
+        </LinearLayout>
+        <SlidingDrawer
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+	  		android:layout_alignParentBottom="true"
+	  		android:layout_centerHorizontal="true"
+            android:content="@+id/content"
+            android:handle="@+id/handle">
+            
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitEnd"
+                android:src="@drawable/photo_select_06"/>
+            <LinearLayout
+                android:id="@+id/content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="9.33"
+                android:background="#cc2D2D32">
+                
+	            <TextView
+					android:id="@+id/selectImageNum"
+	                android:layout_width="match_parent"
+	                android:layout_height="0dp"
+	                android:layout_weight="0.71"
+	                android:text="0 Images"
+	                android:textSize="13dp"
+	                android:textColor="#ffffff"
+	                android:gravity="center"/>
+	            
+	            <ScrollView
+			        android:id="@+id/selectImageListScroll"
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="7.58"
+				    android:paddingRight="5dp"
+				    android:paddingTop="4dp"
+				    android:paddingBottom="5dp"/>
+	            
+	            <TextView
+		            android:id="@+id/create"
+		            android:layout_width="match_parent"
+		            android:layout_height="0dp"
+		            android:layout_weight="1.04"
+		            android:gravity="center"
+		            android:text="CREATE"
+		            android:textSize="17dp"
+		            android:background="#CC54CEF5"
+		            android:textColor="#ffffff"
+		            android:onClick="onCodeCreate"/>
+            
+            </LinearLayout>
+		</SlidingDrawer>
+	</RelativeLayout>
+	<!-- drawer layout -->
+    <ImageView 
+        android:id="@+id/lv_activity_main"
+        android:src="@drawable/sliding_menu_02"
+        android:scaleType="fitStart"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:onClick="onSlidingClick" />
+
+</android.support.v4.widget.DrawerLayout>
+    

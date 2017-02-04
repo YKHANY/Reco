@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:gravity="center"
+    android:weightSum="3"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/tileLayout1"
+        android:orientation="vertical"
+        android:background="#ffffff"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:visibility="invisible"
+    	android:clickable="false"
+    	android:onClick="onImagecodeDetail"
+    	android:weightSum="7">
+    	
+        <ImageView
+            android:id="@+id/imageCode1"
+    		android:layout_width="75dp"
+    		android:layout_height="75dp"
+    		android:scaleType="fitCenter"
+    		android:padding="3dp"
+    		android:layout_weight="4"
+        	android:background="#ffffff"
+    		android:adjustViewBounds="true"
+    		android:src="@drawable/imagecode_01"/>
+        
+        <RelativeLayout
+	        android:id="@+id/imageCodeInfo1"
+        	android:background="#ffffff"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:paddingTop="6dp"
+	    	android:paddingBottom="27dp"
+    		android:layout_weight="3">
+	    	
+            <RelativeLayout
+		        android:id="@+id/imageCodeSubInfo1"
+        		android:background="#ffffff"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content">
+		        <TextView
+		            android:id="@+id/imageCodeName1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:layout_gravity="center"
+		            android:gravity="center"
+		            android:paddingLeft="3dp"
+		            android:text="Travel in Europe"
+		            android:textSize="11dp" />
+
+		        <ImageView
+		            android:id="@+id/imageCodeType1"
+		            android:layout_width="8dp"
+		            android:layout_height="8dp"
+		            android:layout_centerVertical="true"
+		            android:layout_toLeftOf="@+id/imageCodeName1"
+		            android:scaleType="fitCenter"
+		            android:src="@drawable/imagecode_type_02" />
+			</RelativeLayout>
+		</RelativeLayout>
+  	</LinearLayout>
+  	<LinearLayout
+        android:id="@+id/tileLayout2"
+        android:orientation="vertical"
+        android:background="#ffffff"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:visibility="invisible"
+    	android:clickable="false"
+    	android:onClick="onImagecodeDetail"
+    	android:weightSum="7">
+        
+        <ImageView
+            android:id="@+id/imageCode2"
+    		android:layout_width="75dp"
+    		android:layout_height="75dp"
+    		android:scaleType="fitCenter"
+    		android:padding="3dp"
+    		android:layout_weight="4"
+        	android:background="#ffffff"
+    		android:adjustViewBounds="true"
+    		android:src="@drawable/imagecode_02"/>
+  	    
+        <RelativeLayout
+	        android:id="@+id/imageCodeInfo2"
+        	android:background="#ffffff"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:paddingTop="6dp"
+	    	android:paddingBottom="27dp"
+    		android:layout_weight="3">
+	    	
+            <RelativeLayout
+		        android:id="@+id/imageCodeSubInfo2"
+        		android:background="#ffffff"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content">
+		        <TextView
+		            android:id="@+id/imageCodeName2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:layout_gravity="center"
+		            android:gravity="center"
+		            android:paddingLeft="3dp"
+		            android:text="Sport Day"
+		            android:textSize="11dp" />
+
+		        <ImageView
+		            android:id="@+id/imageCodeType2"
+		            android:layout_width="8dp"
+		            android:layout_height="8dp"
+		            android:layout_centerVertical="true"
+		            android:layout_toLeftOf="@+id/imageCodeName2"
+		            android:scaleType="fitCenter"
+		            android:src="@drawable/imagecode_type_01" />
+			</RelativeLayout>
+		</RelativeLayout>
+  	</LinearLayout>
+  	<LinearLayout
+        android:id="@+id/tileLayout3"
+        android:orientation="vertical"
+        android:background="#ffffff"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:visibility="invisible"
+    	android:clickable="false"
+    	android:onClick="onImagecodeDetail"
+    	android:weightSum="7">
+  	    
+        <ImageView
+            android:id="@+id/imageCode3"
+    		android:layout_width="75dp"
+    		android:layout_height="75dp"
+    		android:scaleType="fitCenter"
+    		android:padding="3dp"
+    		android:layout_weight="4"
+        	android:background="#ffffff"
+    		android:adjustViewBounds="true"
+    		android:src="@drawable/imagecode_03"/>
+  	    
+        <RelativeLayout
+	        android:id="@+id/imageCodeInfo3"
+        	android:background="#ffffff"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:paddingTop="6dp"
+	    	android:paddingBottom="27dp"
+    		android:layout_weight="3">
+	    	
+            <RelativeLayout
+		        android:id="@+id/imageCodeSubInfo3"
+        		android:background="#ffffff"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content">
+		        <TextView
+		            android:id="@+id/imageCodeName3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:layout_gravity="center"
+		            android:gravity="center"
+		            android:paddingLeft="3dp"
+		            android:text="Mom's B-Day"
+		            android:textSize="11dp" />
+
+		        <ImageView
+		            android:id="@+id/imageCodeType3"
+		            android:layout_width="8dp"
+		            android:layout_height="8dp"
+		            android:layout_centerVertical="true"
+		            android:layout_toLeftOf="@+id/imageCodeName3"
+		            android:scaleType="fitCenter"
+		            android:src="@drawable/imagecode_type_01" />
+			</RelativeLayout>
+		</RelativeLayout>
+  	</LinearLayout>
+</LinearLayout>
